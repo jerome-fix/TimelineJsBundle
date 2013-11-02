@@ -18,10 +18,10 @@
 	},
 	"autoload" : {
 		"psr-0" : {
-			"Jfx\\TimelineJSBundle" : ""
+			"Jfx\\TimelineJsBundle" : ""
 		}
 	},
-	"target-dir" : "Jfx/TimelineJSBundle",
+	"target-dir" : "Jfx/TimelineJsBundle",
 	"config" : {
 		"bin-dir" : "bin/"
 	},
