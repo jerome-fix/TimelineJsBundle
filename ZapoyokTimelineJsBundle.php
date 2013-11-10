@@ -1,7 +1,7 @@
 <?php
 
 /**
- * This file is part of the Jfx project.
+ * This file is part of the Zapoyok project.
  *
  * (c) Jérôme FIX <jerome.fix@zapoyok.info>
  *
@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Jfx\TimelineJsBundle;
+namespace Zapoyok\TimelineJsBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class JfxTimelineJsBundle extends Bundle
+class ZapoyokTimelineJsBundle extends Bundle
 {
 }
