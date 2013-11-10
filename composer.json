@@ -1,5 +1,5 @@
 {
-	"name" : "jfx/timelinejs-bundle",
+	"name" : "zapoyok/timelinejs-bundle",
 	"description" : "Timeline JS",
 	"type" : "symfony-bundle",
 	"authors" : [{
@@ -18,10 +18,10 @@
 	},
 	"autoload" : {
 		"psr-0" : {
-			"Jfx\\TimelineJsBundle" : ""
+			"Zapoyok\\TimelineJsBundle" : ""
 		}
 	},
-	"target-dir" : "Jfx/TimelineJsBundle",
+	"target-dir" : "Zapoyok/TimelineJsBundle",
 	"config" : {
 		"bin-dir" : "bin/"
 	},
