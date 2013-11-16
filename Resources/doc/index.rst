@@ -4,9 +4,5 @@ TimelineJsBundle
 Reference Guide
 ---------------
 
-.. toctree::
-   :maxdepth: 1
-   :numbered:
-
-   reference/installation
-   reference/twig_helpers
++ `Installation <reference/installation.rst>`__
++ `Twig Helpers <reference/twig_helpers.rst>`__
