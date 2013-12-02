@@ -15,8 +15,8 @@
                 {
                     'start': new Date("{{ item.getDateStart }}"),
                     'end': new Date("{{ item.getDateEnd }}"),
-                    'content': "{{ item.getContent }}",
-                    'group' : "{{ item.getGroup }}",
+                    'content': "{{ item.getContent | trans }}",
+                    'group' : "{{ item.getGroup | trans }}",
                    'className' : "{{ item.getClassName }}"
                    }{% if not loop.last %},{% endif %}
 
