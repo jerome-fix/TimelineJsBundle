@@ -54,15 +54,15 @@ class TimelineExtension extends \Twig_Extension
     {
 
         $options = array_merge(array(
-            'min' => null,
-            'max' => null,
-            'width' => '100%',
-            'height' => 'auto',
-            'minHeight' => '300',
-            'style' => 'dot',
-            'showNavigation' => true,
-            'animate' => true,
-            'locale' => 'en',
+//            'min' => null,
+//            'max' => null,
+//            'width' => '100%',
+//            'height' => 'auto',
+//            'minHeight' => '300',
+//            'style' => 'dot',
+//            'showNavigation' => true,
+//            'animate' => true,
+//            'locale' => 'en',
             'timelineID' => 'timeline'
                 ), $options);
         

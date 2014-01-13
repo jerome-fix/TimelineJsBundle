@@ -1,61 +1,30 @@
 <div id="{{ options.timelineID }}"></div>
      
      <script type="text/javascript">
-        var timeline;
-        var dataTimeline;
-
+         
+        
         function drawVisualization() {
-
-            // Create a JSON data table
-            {#{ render(controller('CoreHolidayBundle:Period:dataCalendar', { 'items': items })) }#}
-
+            
             dataTimeline = [
 
             {% for item in items %}
                 {
                     'start': new Date("{{ item.getDateStart }}"),
                     'end': new Date("{{ item.getDateEnd }}"),
-                    'content': "{{ item.getContent | trans }}",
-                    'group' : "{{ item.getGroup | trans }}",
+                    'title': "{{ item.getContent | trans }}",
+                   {# 'group' : "{{ item.getGroup | trans }}",#}
                    'className' : "{{ item.getClassName }}"
                    }{% if not loop.last %},{% endif %}
 
             {% endfor %}
 
             ];
-
-
-            // Specify options
-            var optionsTimeline = {
-                width:  '{{ options.width }}',
-                minHeight:  '{{ options.minHeight }}',
-                height: '{{ options.height }}',
-                style: '{{ options.style }}',
-                //min: new Date("{{ options.min }}"),
-                //max: new Date("{{ options.max }}"),
-                showNavigation : {{ options.showNavigation }},
-                animate: {{ options.animate }},
-                locale: "{{ options.locale }}"
-            };
-
-            timeline = new links.Timeline(document.getElementById('{{ options.timelineID }}'));
-
-            function onTimelineSelect() {
-                var sel = timeline.getSelection();
-               if (sel.length) {
-                if (sel[0].row != undefined) {
-                  var row = sel[0].row;
-                }
-              }
-
-
-            }
-
-            links.events.addListener(timeline, 'select', onTimelineSelect);
-
-            // Draw our timeline with the created data and options
-            timeline.draw(dataTimeline, optionsTimeline);
+            
+            $('#{{ options.timelineID }}').fullCalendar({
+                events: dataTimeline,
+                 contentHeight: 300
+            })
 
         }
-
+        
     </script>

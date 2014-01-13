@@ -1,0 +1,6 @@
+{
+    "name": "TimelineJsBundle",
+    "dependencies": {
+        "fullcalendar": "latest"
+    }
+}
